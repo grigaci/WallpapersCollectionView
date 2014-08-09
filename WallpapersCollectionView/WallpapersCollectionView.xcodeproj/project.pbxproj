@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44C7F167049345468557C54A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF46920DE1F2490D8238C65E /* libPods.a */; };
 		656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */; };
 		656F408219963A5E009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F408019963A5E009A1689 /* AppDelegate.swift */; };
 		656F408C19963ADD009A1689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F408819963ADD009A1689 /* Images.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		656F405A1996395B009A1689 /* WallpapersCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapersCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F40741996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 		656F408519963AA8009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656F408819963ADD009A1689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		656F408B19963ADD009A1689 /* WallpapersCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallpapersCollectionView.xcdatamodel; sourceTree = "<group>"; };
+		656F4090199641B8009A1689 /* WallpapersCollectionView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "WallpapersCollectionView-Bridging-Header.h"; path = "Helpers/ObjectiveCBridging/WallpapersCollectionView-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF46920DE1F2490D8238C65E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C7F167049345468557C54A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F7FE9F12DB440EA86238419 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF46920DE1F2490D8238C65E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		656F40511996395B009A1689 = {
 			isa = PBXGroup;
 			children = (
 				656F405C1996395B009A1689 /* WallpapersCollectionView */,
 				656F40721996395B009A1689 /* WallpapersCollectionViewTests */,
 				656F405B1996395B009A1689 /* Products */,
+				31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */,
+				3F7FE9F12DB440EA86238419 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +115,7 @@
 		656F407F19963A5E009A1689 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				656F408E19964181009A1689 /* Helpers */,
 				656F408019963A5E009A1689 /* AppDelegate.swift */,
 			);
 			path = Classes;
@@ -138,6 +154,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		656F408E19964181009A1689 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				656F408F19964187009A1689 /* ObjectiveCBridging */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		656F408F19964187009A1689 /* ObjectiveCBridging */ = {
+			isa = PBXGroup;
+			children = (
+				656F4090199641B8009A1689 /* WallpapersCollectionView-Bridging-Header.h */,
+			);
+			name = ObjectiveCBridging;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +177,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 656F40791996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionView" */;
 			buildPhases = (
+				9ED009279A2F477DA971C118 /* Check Pods Manifest.lock */,
 				656F40561996395B009A1689 /* Sources */,
 				656F40571996395B009A1689 /* Frameworks */,
 				656F40581996395B009A1689 /* Resources */,
+				0B9422887E9B419C919B26B6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -230,6 +264,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B9422887E9B419C919B26B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED009279A2F477DA971C118 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		656F40561996395B009A1689 /* Sources */ = {
@@ -341,23 +408,27 @@
 		};
 		656F407A1996395B009A1689 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WallpapersCollectionView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WallpapersCollectionView/Classes/Helpers/ObjectiveCBridging/WallpapersCollectionView-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		656F407B1996395B009A1689 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WallpapersCollectionView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WallpapersCollectionView/Classes/Helpers/ObjectiveCBridging/WallpapersCollectionView-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -414,6 +485,7 @@
 				656F407B1996395B009A1689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		656F407C1996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionViewTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +494,7 @@
 				656F407E1996395B009A1689 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
