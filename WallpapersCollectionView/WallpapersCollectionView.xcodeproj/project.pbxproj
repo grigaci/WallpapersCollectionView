@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		656F40601996395B009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F405F1996395B009A1689 /* AppDelegate.swift */; };
+		656F40631996395B009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */; };
+		656F40651996395B009A1689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40641996395B009A1689 /* ViewController.swift */; };
+		656F40681996395B009A1689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656F40661996395B009A1689 /* Main.storyboard */; };
+		656F406A1996395B009A1689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F40691996395B009A1689 /* Images.xcassets */; };
+		656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		656F40701996395B009A1689 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 656F40521996395B009A1689 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 656F40591996395B009A1689;
+			remoteInfo = WallpapersCollectionView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		656F405A1996395B009A1689 /* WallpapersCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapersCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F405E1996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656F405F1996395B009A1689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallpapersCollectionView.xcdatamodel; sourceTree = "<group>"; };
+		656F40641996395B009A1689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		656F40671996395B009A1689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		656F40691996395B009A1689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		656F40741996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapersCollectionViewTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		656F40571996395B009A1689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F406C1996395B009A1689 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		656F40511996395B009A1689 = {
+			isa = PBXGroup;
+			children = (
+				656F405C1996395B009A1689 /* WallpapersCollectionView */,
+				656F40721996395B009A1689 /* WallpapersCollectionViewTests */,
+				656F405B1996395B009A1689 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		656F405B1996395B009A1689 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				656F405A1996395B009A1689 /* WallpapersCollectionView.app */,
+				656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		656F405C1996395B009A1689 /* WallpapersCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				656F405F1996395B009A1689 /* AppDelegate.swift */,
+				656F40641996395B009A1689 /* ViewController.swift */,
+				656F40661996395B009A1689 /* Main.storyboard */,
+				656F40691996395B009A1689 /* Images.xcassets */,
+				656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */,
+				656F405D1996395B009A1689 /* Supporting Files */,
+			);
+			path = WallpapersCollectionView;
+			sourceTree = "<group>";
+		};
+		656F405D1996395B009A1689 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				656F405E1996395B009A1689 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		656F40721996395B009A1689 /* WallpapersCollectionViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */,
+				656F40731996395B009A1689 /* Supporting Files */,
+			);
+			path = WallpapersCollectionViewTests;
+			sourceTree = "<group>";
+		};
+		656F40731996395B009A1689 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				656F40741996395B009A1689 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		656F40591996395B009A1689 /* WallpapersCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656F40791996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionView" */;
+			buildPhases = (
+				656F40561996395B009A1689 /* Sources */,
+				656F40571996395B009A1689 /* Frameworks */,
+				656F40581996395B009A1689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallpapersCollectionView;
+			productName = WallpapersCollectionView;
+			productReference = 656F405A1996395B009A1689 /* WallpapersCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		656F406E1996395B009A1689 /* WallpapersCollectionViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 656F407C1996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionViewTests" */;
+			buildPhases = (
+				656F406B1996395B009A1689 /* Sources */,
+				656F406C1996395B009A1689 /* Frameworks */,
+				656F406D1996395B009A1689 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				656F40711996395B009A1689 /* PBXTargetDependency */,
+			);
+			name = WallpapersCollectionViewTests;
+			productName = WallpapersCollectionViewTests;
+			productReference = 656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		656F40521996395B009A1689 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Grigaci;
+				TargetAttributes = {
+					656F40591996395B009A1689 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					656F406E1996395B009A1689 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 656F40591996395B009A1689;
+					};
+				};
+			};
+			buildConfigurationList = 656F40551996395B009A1689 /* Build configuration list for PBXProject "WallpapersCollectionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 656F40511996395B009A1689;
+			productRefGroup = 656F405B1996395B009A1689 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				656F40591996395B009A1689 /* WallpapersCollectionView */,
+				656F406E1996395B009A1689 /* WallpapersCollectionViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		656F40581996395B009A1689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F40681996395B009A1689 /* Main.storyboard in Resources */,
+				656F406A1996395B009A1689 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F406D1996395B009A1689 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		656F40561996395B009A1689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F40651996395B009A1689 /* ViewController.swift in Sources */,
+				656F40601996395B009A1689 /* AppDelegate.swift in Sources */,
+				656F40631996395B009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		656F406B1996395B009A1689 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		656F40711996395B009A1689 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 656F40591996395B009A1689 /* WallpapersCollectionView */;
+			targetProxy = 656F40701996395B009A1689 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		656F40661996395B009A1689 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				656F40671996395B009A1689 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		656F40771996395B009A1689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		656F40781996395B009A1689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		656F407A1996395B009A1689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = WallpapersCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		656F407B1996395B009A1689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = WallpapersCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		656F407D1996395B009A1689 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WallpapersCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpapersCollectionView.app/WallpapersCollectionView";
+			};
+			name = Debug;
+		};
+		656F407E1996395B009A1689 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WallpapersCollectionViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpapersCollectionView.app/WallpapersCollectionView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		656F40551996395B009A1689 /* Build configuration list for PBXProject "WallpapersCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F40771996395B009A1689 /* Debug */,
+				656F40781996395B009A1689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		656F40791996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F407A1996395B009A1689 /* Debug */,
+				656F407B1996395B009A1689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		656F407C1996395B009A1689 /* Build configuration list for PBXNativeTarget "WallpapersCollectionViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				656F407D1996395B009A1689 /* Debug */,
+				656F407E1996395B009A1689 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */,
+			);
+			currentVersion = 656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */;
+			path = WallpapersCollectionView.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 656F40521996395B009A1689 /* Project object */;
+}
