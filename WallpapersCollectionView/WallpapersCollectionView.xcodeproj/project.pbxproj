@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44C7F167049345468557C54A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF46920DE1F2490D8238C65E /* libPods.a */; };
+		6548C7DA199656BD00DD1E9D /* BIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548C7D9199656BD00DD1E9D /* BIConstants.swift */; };
 		656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */; };
 		656F408219963A5E009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F408019963A5E009A1689 /* AppDelegate.swift */; };
 		656F408C19963ADD009A1689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F408819963ADD009A1689 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6548C7D9199656BD00DD1E9D /* BIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BIConstants.swift; path = Helpers/Constants/BIConstants.swift; sourceTree = "<group>"; };
 		656F405A1996395B009A1689 /* WallpapersCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapersCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F40741996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +67,14 @@
 				BF46920DE1F2490D8238C65E /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6548C7D81996568E00DD1E9D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				6548C7D9199656BD00DD1E9D /* BIConstants.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		656F40511996395B009A1689 = {
@@ -160,6 +170,7 @@
 		656F408E19964181009A1689 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				6548C7D81996568E00DD1E9D /* Constants */,
 				656F408F19964187009A1689 /* ObjectiveCBridging */,
 			);
 			name = Helpers;
@@ -322,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6548C7DA199656BD00DD1E9D /* BIConstants.swift in Sources */,
 				656F408219963A5E009A1689 /* AppDelegate.swift in Sources */,
 				656F408D19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */,
 				656F409719964970009A1689 /* BITransylvaniaPhotosViewController.swift in Sources */,

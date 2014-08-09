@@ -14,7 +14,7 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
     override init() {
         var layout = UICollectionViewFlowLayout()
         super.init(collectionViewLayout: layout)
-        self.title = NSLocalizedString("Transylvania Photos", tableName: nil, bundle: NSBundle.mainBundle(), value: "Transylvania Photos", comment: "")
+        self.title = BILocalizedString("Transylvania Photos")
     }
 
     convenience required init(coder: NSCoder) {

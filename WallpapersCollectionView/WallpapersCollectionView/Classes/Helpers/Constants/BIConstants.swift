@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+func BILocalizedString(text: String) -> String {
+    return NSLocalizedString(text, tableName: nil, bundle: NSBundle.mainBundle(), value: text, comment: "")
+}
