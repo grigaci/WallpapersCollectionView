@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		656F40601996395B009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F405F1996395B009A1689 /* AppDelegate.swift */; };
-		656F40631996395B009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */; };
-		656F40651996395B009A1689 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40641996395B009A1689 /* ViewController.swift */; };
-		656F40681996395B009A1689 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 656F40661996395B009A1689 /* Main.storyboard */; };
-		656F406A1996395B009A1689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F40691996395B009A1689 /* Images.xcassets */; };
 		656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */; };
+		656F408219963A5E009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F408019963A5E009A1689 /* AppDelegate.swift */; };
+		656F408C19963ADD009A1689 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 656F408819963ADD009A1689 /* Images.xcassets */; };
+		656F408D19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 656F408A19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +25,13 @@
 
 /* Begin PBXFileReference section */
 		656F405A1996395B009A1689 /* WallpapersCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapersCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		656F405E1996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		656F405F1996395B009A1689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallpapersCollectionView.xcdatamodel; sourceTree = "<group>"; };
-		656F40641996395B009A1689 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		656F40671996395B009A1689 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		656F40691996395B009A1689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F40741996395B009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapersCollectionViewTests.swift; sourceTree = "<group>"; };
+		656F408019963A5E009A1689 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		656F408519963AA8009A1689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		656F408819963ADD009A1689 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		656F408B19963ADD009A1689 /* WallpapersCollectionView.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WallpapersCollectionView.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,22 +73,11 @@
 		656F405C1996395B009A1689 /* WallpapersCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				656F405F1996395B009A1689 /* AppDelegate.swift */,
-				656F40641996395B009A1689 /* ViewController.swift */,
-				656F40661996395B009A1689 /* Main.storyboard */,
-				656F40691996395B009A1689 /* Images.xcassets */,
-				656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */,
-				656F405D1996395B009A1689 /* Supporting Files */,
+				656F407F19963A5E009A1689 /* Classes */,
+				656F408619963ADD009A1689 /* Resources */,
+				656F408419963AA8009A1689 /* SupportingFiles */,
 			);
 			path = WallpapersCollectionView;
-			sourceTree = "<group>";
-		};
-		656F405D1996395B009A1689 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				656F405E1996395B009A1689 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		656F40721996395B009A1689 /* WallpapersCollectionViewTests */ = {
@@ -110,6 +95,47 @@
 				656F40741996395B009A1689 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		656F407F19963A5E009A1689 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				656F408019963A5E009A1689 /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		656F408419963AA8009A1689 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				656F408519963AA8009A1689 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		656F408619963ADD009A1689 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				656F408719963ADD009A1689 /* Images */,
+				656F408919963ADD009A1689 /* Model */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		656F408719963ADD009A1689 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				656F408819963ADD009A1689 /* Images.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		656F408919963ADD009A1689 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				656F408A19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,8 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656F40681996395B009A1689 /* Main.storyboard in Resources */,
-				656F406A1996395B009A1689 /* Images.xcassets in Resources */,
+				656F408C19963ADD009A1689 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,9 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				656F40651996395B009A1689 /* ViewController.swift in Sources */,
-				656F40601996395B009A1689 /* AppDelegate.swift in Sources */,
-				656F40631996395B009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */,
+				656F408219963A5E009A1689 /* AppDelegate.swift in Sources */,
+				656F408D19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,17 +258,6 @@
 			targetProxy = 656F40701996395B009A1689 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		656F40661996395B009A1689 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				656F40671996395B009A1689 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		656F40771996395B009A1689 /* Debug */ = {
@@ -331,7 +344,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = WallpapersCollectionView/Info.plist;
+				INFOPLIST_FILE = WallpapersCollectionView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -342,7 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				INFOPLIST_FILE = WallpapersCollectionView/Info.plist;
+				INFOPLIST_FILE = WallpapersCollectionView/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -413,12 +426,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		656F40611996395B009A1689 /* WallpapersCollectionView.xcdatamodeld */ = {
+		656F408A19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */,
+				656F408B19963ADD009A1689 /* WallpapersCollectionView.xcdatamodel */,
 			);
-			currentVersion = 656F40621996395B009A1689 /* WallpapersCollectionView.xcdatamodel */;
+			currentVersion = 656F408B19963ADD009A1689 /* WallpapersCollectionView.xcdatamodel */;
 			path = WallpapersCollectionView.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
