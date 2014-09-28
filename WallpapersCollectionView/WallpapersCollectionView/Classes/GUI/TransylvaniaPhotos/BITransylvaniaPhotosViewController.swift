@@ -13,7 +13,10 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
 
     override init() {
         var layout = UICollectionViewFlowLayout()
+        layout.estimatedItemSize = CGSizeMake(100, 200)
         super.init(collectionViewLayout: layout)
+        self.collectionView?.dataSource = self
+        self.collectionView?.delegate = self
         self.title = BILocalizedString("Transylvania Photos")
     }
 
@@ -23,16 +26,15 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: kCollectionViewCellID)
+        self.collectionView?.registerClass(BIPhotoCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionViewCellID)
     }
 
-    override func collectionView(collectionView: UICollectionView!, numberOfItemsInSection section: Int) -> Int {
-        return 0
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
     }
 
-    override func collectionView(collectionView: UICollectionView!, cellForItemAtIndexPath indexPath: NSIndexPath!) -> UICollectionViewCell! {
-        var cell:UICollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCollectionViewCellID, forIndexPath: indexPath) as UICollectionViewCell
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        var cell:BIPhotoCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCollectionViewCellID, forIndexPath: indexPath) as BIPhotoCollectionViewCell
         return cell
     }
-
 }

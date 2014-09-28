@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		44C7F167049345468557C54A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF46920DE1F2490D8238C65E /* libPods.a */; };
+		653425261997ACD500E8CFB4 /* BIPhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653425251997ACD500E8CFB4 /* BIPhotoCollectionViewCell.swift */; };
 		6548C7DA199656BD00DD1E9D /* BIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6548C7D9199656BD00DD1E9D /* BIConstants.swift */; };
 		656F40761996395B009A1689 /* WallpapersCollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F40751996395B009A1689 /* WallpapersCollectionViewTests.swift */; };
 		656F408219963A5E009A1689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656F408019963A5E009A1689 /* AppDelegate.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		31D6907C0E5F4DC2B3583877 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		653425251997ACD500E8CFB4 /* BIPhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BIPhotoCollectionViewCell.swift; path = GUI/TransylvaniaPhotos/BIPhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		6548C7D9199656BD00DD1E9D /* BIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BIConstants.swift; path = Helpers/Constants/BIConstants.swift; sourceTree = "<group>"; };
 		656F405A1996395B009A1689 /* WallpapersCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapersCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		656F406F1996395B009A1689 /* WallpapersCollectionViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapersCollectionViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				656F409619964970009A1689 /* BITransylvaniaPhotosViewController.swift */,
+				653425251997ACD500E8CFB4 /* BIPhotoCollectionViewCell.swift */,
 			);
 			name = TransylvaniaPhotos;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 				656F408219963A5E009A1689 /* AppDelegate.swift in Sources */,
 				656F408D19963ADD009A1689 /* WallpapersCollectionView.xcdatamodeld in Sources */,
 				656F409719964970009A1689 /* BITransylvaniaPhotosViewController.swift in Sources */,
+				653425261997ACD500E8CFB4 /* BIPhotoCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
