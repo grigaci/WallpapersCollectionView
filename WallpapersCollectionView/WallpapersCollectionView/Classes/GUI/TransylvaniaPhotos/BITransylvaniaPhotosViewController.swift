@@ -13,7 +13,8 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
 
     override init() {
         var layout = UICollectionViewFlowLayout()
-        layout.estimatedItemSize = CGSizeMake(100, 200)
+        layout.estimatedItemSize = CGSizeMake(100, 100)
+        layout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20)
         super.init(collectionViewLayout: layout)
         self.collectionView?.dataSource = self
         self.collectionView?.delegate = self
@@ -29,12 +30,22 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
         self.collectionView?.registerClass(BIPhotoCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionViewCellID)
     }
 
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+        return BIModelManager.sharedInstance.locationsCount
+    }
+
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        var location = BIModelManager.sharedInstance.locationAtIndex(section)
+        var countPhotos = (location != nil) ? location?.photos.count : 0
+        return countPhotos!
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         var cell:BIPhotoCollectionViewCell = collectionView.dequeueReusableCellWithReuseIdentifier(kCollectionViewCellID, forIndexPath: indexPath) as BIPhotoCollectionViewCell
+        
+        var location = BIModelManager.sharedInstance.locationAtIndex(indexPath.section)
+        var photo = location?.photos.objectAtIndex(indexPath.row) as BIPhoto
+        cell.photo = photo
         return cell
     }
 }
