@@ -1,0 +1,26 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+pod 'CJAMacros', '~> 2.0.1'
+pod 'CJALog', '~> 1.1.0'
+pod 'MagicalRecord', '~> 2.2'
+
+post_install do |installer|
+    installer.project.targets.each do |target|
+        target.build_configurations.each do |config|
+
+            # Disable the logging for MagicalRecord
+            # This should be removed with the MagicalRecord Version 2.3.0
+            # https://github.com/magicalpanda/MagicalRecord/wiki/Logging
+            if  target.name.include? "MagicalRecord"
+                preprocessorMacros = config.build_settings['GCC_PREPROCESSOR_DEFINITIONS']
+                if preprocessorMacros.nil?
+                    preprocessorMacros = ["COCOAPODS=1"];
+                end
+
+                preprocessorMacros << "MR_ENABLE_ACTIVE_RECORD_LOGGING=0"
+                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] = preprocessorMacros
+            end
+        end
+    end
+end
