@@ -48,4 +48,19 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
         cell.photo = photo
         return cell
     }
+
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        var cell:BIPhotoCollectionViewCell = collectionView.cellForItemAtIndexPath(indexPath) as BIPhotoCollectionViewCell
+        var photoViewController: BIPhotoViewController = BIPhotoViewController(nibName: nil, bundle: nil)
+
+        // Set photo
+        photoViewController.photo = cell.photo
+
+        // Set title
+        var location = BIModelManager.sharedInstance.locationAtIndex(indexPath.section)
+        photoViewController.title = location?.name
+
+        // Push it on nav stack
+        self.navigationController?.pushViewController(photoViewController, animated: true)
+    }
 }

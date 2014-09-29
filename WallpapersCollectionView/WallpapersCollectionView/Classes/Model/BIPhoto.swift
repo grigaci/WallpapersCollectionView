@@ -31,4 +31,7 @@ class BIPhoto {
         return scaledImage
     }
     
+    func image() -> UIImage! {
+        return UIImage(named: self.imageName)
+    }
 }

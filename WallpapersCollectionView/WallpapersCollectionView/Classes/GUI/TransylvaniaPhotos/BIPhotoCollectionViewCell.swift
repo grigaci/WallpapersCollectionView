@@ -37,9 +37,9 @@ class BIPhotoCollectionViewCell : UICollectionViewCell {
 
     func setupConstraints() {
         let viewsDictionary = ["imageView":imageView]
-        let constraints_H:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[imageView]-0-|",
+        let constraints_H:Array = NSLayoutConstraint.constraintsWithVisualFormat("H:|[imageView]|",
                                   options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
-        let constraints_V:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[imageView]-0-|",
+        let constraints_V:Array = NSLayoutConstraint.constraintsWithVisualFormat("V:|[imageView]|",
                                   options: NSLayoutFormatOptions(0), metrics: nil, views: viewsDictionary)
         self.contentView.addConstraints(constraints_H)
         self.contentView.addConstraints(constraints_V)
