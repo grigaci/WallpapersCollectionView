@@ -21,10 +21,12 @@ class BIPhoto {
         let data = NSData(data: UIImageJPEGRepresentation(image, 0))
         let imageSource = CGImageSourceCreateWithData(data, nil)
         let scale = UIScreen.mainScreen().scale
+        let pixelSize = String(kCGImageSourceThumbnailMaxPixelSize)
+        let ifAbsent = String(kCGImageSourceCreateThumbnailFromImageIfAbsent)
         let maxSize = 150.0 / scale
         let options = [
-            kCGImageSourceThumbnailMaxPixelSize: maxSize,
-            kCGImageSourceCreateThumbnailFromImageIfAbsent: true
+            pixelSize : maxSize,
+            ifAbsent : true
         ]
 
         let scaledImage = UIImage(CGImage: CGImageSourceCreateThumbnailAtIndex(imageSource, 0, options))

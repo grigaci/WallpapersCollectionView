@@ -16,8 +16,8 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
         layout.estimatedItemSize = CGSizeMake(100, 100)
         layout.sectionInset = UIEdgeInsetsMake(10, 20, 10, 20)
         super.init(collectionViewLayout: layout)
-        self.collectionView?.dataSource = self
-        self.collectionView?.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
         self.title = BILocalizedString("Transylvania Photos")
     }
 
@@ -27,7 +27,7 @@ class BITransylvaniaPhotosViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView?.registerClass(BIPhotoCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionViewCellID)
+        self.collectionView.registerClass(BIPhotoCollectionViewCell.self, forCellWithReuseIdentifier: kCollectionViewCellID)
     }
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
